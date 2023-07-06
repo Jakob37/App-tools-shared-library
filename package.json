@@ -1,0 +1,19 @@
+{
+  "name": "app_library",
+  "version": "1.0.0",
+  "description": "Common library for suite of React Native tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Jakob37/App-tools-shared-library.git"
+  },
+  "author": "Jakob Willforss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jakob37/App-tools-shared-library/issues"
+  },
+  "homepage": "https://github.com/Jakob37/App-tools-shared-library#readme"
+}
