@@ -4,5 +4,5 @@ export { helloWorld, helloWorld2 }
 import { loadDataFromStorage } from './lib/storage'
 export { loadDataFromStorage }
 
-import { HelloWorldView } from './lib/testviews'
+import { HelloWorldView } from './lib/testview'
 export { HelloWorldView }
