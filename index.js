@@ -3,3 +3,6 @@ export { helloWorld, helloWorld2 }
 
 import { loadDataFromStorage } from './lib/storage'
 export { loadDataFromStorage }
+
+import { helloWorldView } from './lib/testviews'
+export { helloWorldView }

@@ -1,6 +1,6 @@
 {
   "name": "@minimalist_tools/library",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Common library for suite of React Native tools",
   "main": "index.js",
   "scripts": {
