@@ -1,0 +1,1 @@
+declare module '@minimalist_tools/library'
