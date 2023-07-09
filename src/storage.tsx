@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import React = require('react')
 
 const StorageContext = React.createContext<{
   entries: Object[]
@@ -12,15 +13,10 @@ const StorageContext = React.createContext<{
 })
 
 interface DataProviderProps {
-  children: React.ReactNode
+  storage_key: string; children: React.ReactNode
 }
 
-const StorageProvider: React.FC<DataProviderProps> = (
-  props: {
-    storage_key: string
-  },
-  { children },
-) => {
+const StorageProvider: React.FC<DataProviderProps> = (props) => {
   const [entries, setEntries] = useState<Object[]>([])
 
   // Load data from async storage
@@ -50,10 +46,17 @@ const StorageProvider: React.FC<DataProviderProps> = (
 
   return (
     <StorageContext.Provider value={{ entries, saveEntries }}>
-      {children}
+      {props.children}
     </StorageContext.Provider>
   )
 }
+
+// const StorageProvider = ({children}) => {
+//   <View>
+//     <Text>Storage provider wrapping</Text>
+//     {children}
+//   </View>
+// }
 
 const loadDataFromStorage = async (
   storage_key: string,
