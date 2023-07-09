@@ -1,5 +1,5 @@
-import { helloWorld, helloWorld2 } from './src/helloworld'
+import { helloWorld, helloWorld2 } from './lib/helloworld'
 export { helloWorld, helloWorld2 }
 
-import { loadDataFromStorage } from './src/storage'
+import { loadDataFromStorage } from './lib/storage'
 export { loadDataFromStorage }
