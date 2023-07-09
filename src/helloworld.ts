@@ -2,4 +2,8 @@ function helloWorld() {
   console.log('Hello world')
 }
 
-export { helloWorld }
+function helloWorld2() {
+  console.log('Hello hello world')
+}
+
+export { helloWorld, helloWorld2 }
